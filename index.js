@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'my-addon'
+  name: 'my-addon',
+  included: function(app) {
+    this._super.included(app);
+  }
 };
